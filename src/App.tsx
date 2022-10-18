@@ -18,7 +18,7 @@ export const App = () => (
       <Grid minH="100vh" p={3}>
         <ColorModeSwitcher justifySelf="flex-end" />
         <VStack spacing={8}>
-          <Logo h="70vmin" pointerEvents="none" />
+          <Logo h="60vmin" pointerEvents="none" />
         </VStack>
       </Grid>
     </Box>
