@@ -22,8 +22,7 @@ export const App = () => (
         </VStack>
 
           <VStack>
-            <iframe src="http://146.190.227.164/public/acc_radio/embed?volume=100?&theme=light"
-                allowTransparency={true}
+            <iframe src="https://control.accradio.dk/public/acc_radio/embed?volume=100?&theme=light"
                 style={{width: "80%", border:"0"}}>
             </iframe>
           </VStack>
