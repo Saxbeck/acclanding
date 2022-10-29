@@ -24,13 +24,13 @@ export const App = () => (
               <Logo h="40vmin" pointerEvents="none" />
           </HStack>
         </VStack>
-{/*
+
     <VStack>
         <iframe src="https://control.accradio.dk/public/acc_radio/embed?volume=100?&theme=light"
                 style={{width: "80%", border:"0"}}>
         </iframe>
     </VStack>
-*/}
+
       </Grid>
     </Box>
   </ChakraProvider>
