@@ -1,13 +1,16 @@
 import * as React from "react"
 import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack, HStack,
-  Code,
-  Grid,
-  theme,
+    ChakraProvider,
+    Box,
+    Flex,
+    Grid,
+    Text,
+    Stack,
+    Spacer,
+    Container,
+    SimpleGrid,
+    VStack, HStack,
+    theme, Heading, UnorderedList, ListItem,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
@@ -20,11 +23,22 @@ export const App = () => (
         <ColorModeSwitcher justifySelf="flex-end" visibility={"hidden"} />
         <VStack spacing={8}>
           <HStack>
-              <MemoImg h="30vmin" pointerEvents="none"/>
               <Logo h="40vmin" pointerEvents="none" />
           </HStack>
         </VStack>
       </Grid>
     </Box>
+    {/*<footer>*/}
+    {/*  <Box minH="20vh" color="black" background="blackAlpha.50" p="4">*/}
+    {/*    <Container>*/}
+    {/*      <Text fontSize='xl' py="2">Kontakt</Text>*/}
+    {/*      <Text>Tlf: 00 00 00 00</Text>*/}
+    {/*      <Text>Email: email@email.dk</Text>*/}
+    {/*      <Box py="4">*/}
+    {/*        <Text as='b'>Tilsynsmyndighed: Radio- og tv-nævnet</Text>*/}
+    {/*      </Box>*/}
+    {/*    </Container>*/}
+    {/*  </Box>*/}
+    {/*</footer>*/}
   </ChakraProvider>
 )
