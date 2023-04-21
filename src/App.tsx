@@ -4,6 +4,7 @@ import {
     Box,
     Grid,
     Text,
+    SimpleGrid,
     Container,
     VStack, HStack,
     theme, Heading, UnorderedList, ListItem, Link,
@@ -31,18 +32,25 @@ export const App = () => (
     </Box>
     <footer>
       <Box minH="20vh" color="black" background="blackAlpha.50" p="4">
-        <Container>
-          <Text fontSize='xl' py="2">Kontakt</Text>
-          <Box>
-            <Text><Link href="tel:81827012">Studie tlf: 81 82 70 12</Link></Text>
-            <Text><Link href="tel:40159615">Kontakt tlf: 40 15 96 15</Link></Text>
-            <Text>Ansvarshavende: Ken Saxbeck</Text>
-            <Text>Email: kontakt@saxproduction.dk</Text>
-          </Box>
-          <Box py="4">
-            <Text>Sende tidspunkt: 12 & 13 Maj. 2023</Text>
-            <Text as='b'><Link href="https://slks.dk/">Tilsynsmyndighed: Radio- og tv-nævnet</Link></Text>
-          </Box>
+        <Container maxW='container.md'>
+            <SimpleGrid columns={2} spacing={10}>
+              <Box py="2">
+              <Text fontSize='xl' py="2">Info</Text>
+                <Text>Frekvens: FM 93.1Mhz</Text>
+                <Text>Sende tidspunkt: 12 & 13 Maj. 2023</Text>
+                <br/>
+                <Text>Studie Lokation: <Link href="geo:55.5915783,12.5807908,17">Nøragersmindevej 90, 2791 Dragør</Link></Text>
+              </Box>
+              <Box py="2">
+              <Text fontSize='xl' py="2">Kontakt</Text>
+                <Text><Link href="tel:81827012">Studie: 81 82 70 12</Link></Text>
+                <Text><Link href="tel:40159615">Program chef: 40 15 96 15</Link></Text>
+                <br/>
+                <Text>Ansvarshavende: Ken Saxbeck</Text>
+                <Text>Email: kontakt@saxproduction.dk</Text>
+              </Box>
+            </SimpleGrid>
+          <Text as='b' py="2"><Link href="https://slks.dk/">Tilsynsmyndighed: Radio- og tv-nævnet</Link></Text>
         </Container>
       </Box>
     </footer>
