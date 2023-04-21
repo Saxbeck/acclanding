@@ -33,10 +33,14 @@ export const App = () => (
       <Box minH="20vh" color="black" background="blackAlpha.50" p="4">
         <Container>
           <Text fontSize='xl' py="2">Kontakt</Text>
-          {/*<Text><Link href="tel:81827012">Studie tlf: 81 82 70 12</Link></Text>*/}
-          <Text><Link href="tel:40159615">Kontakt tlf: 40 15 96 15</Link></Text>
-          {/*<Text>Email: kontakt@saxproduction.dk</Text>*/}
+          <Box>
+            <Text><Link href="tel:81827012">Studie tlf: 81 82 70 12</Link></Text>
+            <Text><Link href="tel:40159615">Kontakt tlf: 40 15 96 15</Link></Text>
+            <Text>Ansvarshavende: Ken Saxbeck</Text>
+            <Text>Email: kontakt@saxproduction.dk</Text>
+          </Box>
           <Box py="4">
+            <Text>Sende tidspunkt: 12 & 13 Maj. 2023</Text>
             <Text as='b'><Link href="https://slks.dk/">Tilsynsmyndighed: Radio- og tv-nævnet</Link></Text>
           </Box>
         </Container>
