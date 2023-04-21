@@ -2,19 +2,14 @@ import * as React from "react"
 import {
     ChakraProvider,
     Box,
-    Flex,
     Grid,
     Text,
-    Stack,
-    Spacer,
     Container,
-    SimpleGrid,
     VStack, HStack,
     theme, Heading, UnorderedList, ListItem, Link,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
-import {MemoImg} from "./MemoImg";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -23,17 +18,24 @@ export const App = () => (
         <ColorModeSwitcher justifySelf="flex-end" visibility={"hidden"} />
         <VStack spacing={8}>
           <HStack>
-              <Logo h="40vmin" pointerEvents="none" />
+              <Logo h="50vmin" pointerEvents="none" />
           </HStack>
         </VStack>
+        {/*Uncomment when updating to real url*/}
+        {/*<VStack>*/}
+        {/*  <iframe src="https://demo.azuracast.com/public/azuratest_radio/embed?volume=100?&theme=light"*/}
+        {/*    style={{width: "80%", border:"0"}}>*/}
+        {/*  </iframe>*/}
+        {/*</VStack>*/}
       </Grid>
     </Box>
     <footer>
       <Box minH="20vh" color="black" background="blackAlpha.50" p="4">
         <Container>
           <Text fontSize='xl' py="2">Kontakt</Text>
-          <Text>Tlf: 00 00 00 00</Text>
-          <Text>Email: email@email.dk</Text>
+          {/*<Text><Link href="tel:81827012">Studie tlf: 81 82 70 12</Link></Text>*/}
+          <Text><Link href="tel:40159615">Kontakt tlf: 40 15 96 15</Link></Text>
+          {/*<Text>Email: kontakt@saxproduction.dk</Text>*/}
           <Box py="4">
             <Text as='b'><Link href="https://slks.dk/">Tilsynsmyndighed: Radio- og tv-nævnet</Link></Text>
           </Box>
