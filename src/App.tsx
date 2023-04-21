@@ -18,7 +18,7 @@ export const App = () => (
         <ColorModeSwitcher justifySelf="flex-end" visibility={"hidden"} />
         <VStack spacing={8}>
           <HStack>
-              <Logo h="50vmin" pointerEvents="none" />
+              <Logo h="60vmin" pointerEvents="none" />
           </HStack>
         </VStack>
         {/*Uncomment when updating to real url*/}
