@@ -22,12 +22,6 @@ export const App = () => (
               <Logo h="60vmin" pointerEvents="none" />
           </HStack>
         </VStack>
-          {/*Uncomment when updating to real url*/}
-        <VStack>
-          <iframe src="https://control.accradio.dk/public/acc_radio/embed?volume=100?&theme=light"
-            style={{width: "80%", border:"0"}}>
-          </iframe>
-        </VStack>
       </Grid>
     </Box>
     <footer>
